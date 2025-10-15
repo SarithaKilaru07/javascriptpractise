@@ -1,0 +1,46 @@
+<html>
+<!-- <head> 
+ <script> 
+        function conditional() {
+            let day = document.getElementById("day").value;
+            let msg = "";
+            if (day == "mon") {
+                msg = "yes today is monday";
+            }
+            else if(day=="friday"){
+                msg="its near to weekend";
+            }
+            else{
+                msg="its a working day";
+            }
+            document.getElementById("demo").innerHTML = msg;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" name="day" id="day" placeholder="enter the day" value="">
+    <button type="button" onclick="conditional()">submit</button>
+    <p id="demo"></p>
+</body>
+-->
+<script>
+    function ages() {
+        let age = document.getElementById("age").value;
+        let res = "";
+        if (age >= 18) {
+            alert("print is elder" + res);
+        } else {
+            alert("print it is minor" + res);
+        }
+        document.getElementById("demo").innerHTML = res;
+    }
+</script>
+
+<body>
+    <input type="number" id="age" placeholder="age" value="age">
+    <button type="button" onclick="ages()">submit</button>
+    <p id="demo"></p>
+</body>
+
+</html>
