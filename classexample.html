@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+    <script>
+        class house {
+            constructor(shape, color) {
+                this.shape = shape;
+                this.color = color;
+            }
+
+         housedetails() {
+              return `${this.shape}`;
+            }
+        }
+
+        const houseobj = new house("square", "red");
+        document.getElementById("demo").innerHTML=houseobj.housedetails();
+    </script>
+</body>
+</html>
