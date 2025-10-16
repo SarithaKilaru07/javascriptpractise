@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+<body>
+    <p id="demo"></p>
+    <!-- <script> 
+        const details = {
+            fName: "sithara",
+            lname: "killa",
+            age: "15",
+            gender: "female"
+        };
+      const person=Object.create(details);
+      person.age="39";
+      delete details.gender;
+        document.getElementById("demo").innerHTML = details.fName + " is " + person.age + " years old " + details.gender;
+     </script> -->
+<script>
+      const details = {
+            fName: "sithara",
+            lname: "killa",
+            age: "15",
+            gender: "female",
+        
+        person:function(){
+            return this.fName+ " is " +this.age+ " years"; 
+        }
+    };
+    document.getElementById("demo").innerHTML=details.person();
+</script>
+</body>
+</head>
+
+</html>

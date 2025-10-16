@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        function student() {
+            return new Promise((resolve) => {
+                let marks=true;
+                setTimeout(() => {
+                    if(marks){
+                    resolve("top students")}
+                }, 3000)
+            })
+        }
+        async function section() {
+            document.getElementById("demo").innerHTML = "student are full in class";
+            let toppers = await student();
+            document.getElementById("demo").innerHTML = toppers;
+        }
+        section();
+    </script>
+</body>
+
+</html>

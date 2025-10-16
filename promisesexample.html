@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        let order = new Promise((resolve, reject) => {
+            let food = true;
+            setTimeout(() => {
+                if (food) {
+                    resolve("food is ready");
+                } else {
+                    reject("sorry,not ready");
+                }
+            }, 3000)
+        })
+        order.then((message) => {
+            document.getElementById("demo").innerHTML = message;
+        })
+        order.catch((error) => {
+            document.getElementById("demo").innerHTML = error;
+        })
+    </script>
+</body>
+
+</html>
