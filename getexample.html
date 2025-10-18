@@ -1,0 +1,74 @@
+<!-- <html> 
+  <body> 
+    <p id="demo"></p>
+    <script>
+      fetch('https://jsonplaceholder.typicode.com/posts/1')
+        .then(response => response.json())
+        .then(data => {
+          // Convert object to a readable string
+          document.getElementById("demo").innerHTML = `
+            <strong>Title:</strong> ${data.title} <br>
+            <strong>Body:</strong> ${data.body}
+          `;
+        })
+        .catch(error => {
+          document.getElementById("demo").innerHTML = 'Error: ' + error;
+        });
+    </script> 
+  </body>
+</html> -->
+<!-- <html> 
+    <body>
+        <p id="demo"></p>
+        <script>
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body:JSON.stringify({
+    title: 'foo',
+    body: 'bar',
+    userId: 1
+
+  })
+})
+ .then(response => response.json())
+        .then(data => {
+          // Convert object to a readable string
+          document.getElementById("demo").innerHTML = `
+            <strong>Title:</strong> ${data.title} <br>
+            <strong>Body:</strong> ${data.body}
+          `;
+        })
+        .catch(error => {
+          document.getElementById("demo").innerHTML = 'Error: ' + error;
+        });
+        </script>
+    </body>
+</html> -->
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        fetch('https://jsonplaceholder.typicode.com/posts/1',{
+        method:'PUT',
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify({
+            title:"update  title"
+        })
+        })
+        .then(response => response.json())
+        .then(data => {
+          // Convert object to a readable string
+          document.getElementById("demo").innerHTML = ` ${data.title} 
+          `;
+        })
+        .catch(error => {
+          document.getElementById("demo").innerHTML = 'Error: ' + error;
+        });
+        </script>
+    </body>
+</html>
