@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html> 
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let word = "Pneumonoultramicroscopicsilicovolcanoconiosis";
+      let countword = word.length;
+      document.getElementById("demo").innerHTML =
+        "Length of the word is " + countword;
+    </script>
+  </body>
+</html>
+-->
+
+
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let word="Pneumonoultramicroscopicsilicovolcanoconiosis";
+            let c=0;
+            for(let i=0;i<word.length;i++){
+                if(word[i]=='o'){
+            c++;
+            }  
+        }
+            document.getElementById("demo").innerHTML="count of " + c; 
+                 </script>
+    </body>
+</html>
