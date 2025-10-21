@@ -1,0 +1,34 @@
+<!-- <html> 
+<body>
+     <img id="demo" src="./furn1.jpg" height="200" width="200" alt="slideshow image">
+    <script>
+        const imagess = ["furn1.jpg", "furn.jpg", "insta.png"]
+        let index = 0;
+        function changeimage() {
+            index = (index + 1) % imagess.length;
+            document.getElementById("demo").src = imagess[index];
+        }
+        setInterval(changeimage, 1000);
+    </script>
+</body>
+</html> -->
+<html>
+    <body>
+        <p id="demo"></p>
+    <script>
+        const quotes=[ "The best way to predict the future is to create it.",
+      "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+      "Don’t watch the clock; do what it does. Keep going.",
+      "In the middle of every difficulty lies opportunity.",
+      "Dream big and dare to fail."]
+      let index=0;
+document.getElementById("demo").innerHTML=quotes[index];
+      function changequotes(){
+        // index=(index+1)%quotes.length;
+        index=Math.floor(Math.random()*quotes.length);
+    document.getElementById("demo").innerHTML=quotes[index]+ " "; 
+   }
+   setInterval(changequotes,1000);
+    </script>
+    </body>
+</html>
